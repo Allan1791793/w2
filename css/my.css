@@ -1,3 +1,10 @@
-#link-list1 ul{
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#link-list1 ul {
     margin: 0 0 10px 0;
 }
