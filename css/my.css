@@ -1,17 +1,37 @@
 body {
-    margin-left: 0px;
+    margin-left: 0%;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 0%;
     margin-bottom: 0px;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+li {
+    display: flex;
 }
 
 header {
-    background-image: url(https://raw.githubusercontent.com/Allan1791793/w2/main/images/wave.jpg);
+    background-image: url(https://raw.githubusercontent.com/Allan1791793/w2/main/images/header.jpg);
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
-  }  
+}
 
 #a1 {
     font-family: Microsoft JhengHei;
@@ -22,21 +42,22 @@ header {
 
 #a1 h1 {
     font-size: 40px;
+    line-height: 0.01;
 }
 
 #a1 h2 {
     font-size: 16px;
-    line-height: 0.001;
+    line-height: 0.2;
 }
 
 .menu {
+    font-family: Microsoft JhengHei;
     overflow: hidden;
     background-image: linear-gradient(#555, #111);
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
 }
 
@@ -53,11 +74,19 @@ header {
 /* Links - change color on hover */
 
 .menu a:hover {
-    background-color: #ddd;
-    color: black;
+    background-image: linear-gradient(#111, #555);
+    color: #f2f2f2;
+    text-decoration: underline;
 }
 
 #footer {
-    height: 150px;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    height: 100px;
+    color: rgb(255, 255, 255);
     background-image: linear-gradient(#111, #555);
+}
+
+#footer a {
+    color: rgb(255, 255, 255);
 }
